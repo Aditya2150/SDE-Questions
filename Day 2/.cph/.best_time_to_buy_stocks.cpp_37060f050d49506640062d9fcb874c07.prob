@@ -1,0 +1,1 @@
+{"name":"Local: best_time_to_buy_stocks","url":"c:\\Users\\adity\\OneDrive\\Desktop\\SDE\\Day 2\\best_time_to_buy_stocks.cpp","tests":[{"id":1624387940858,"input":"6\n7 1 5 3 6 4","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\adity\\OneDrive\\Desktop\\SDE\\Day 2\\best_time_to_buy_stocks.cpp","group":"local","local":true}
