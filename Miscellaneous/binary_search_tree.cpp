@@ -271,7 +271,7 @@ int main()
     cout << "1- Insert\n";
     cout << "2- Delete\n";
     cout << "3- Traversals\n";
-    cout << "4- Root\n";
+    cout << "4- Top\n";
     cout << "Any Character to EXIT!\n\n";
     int n;
     cout << "Enter--> ";
