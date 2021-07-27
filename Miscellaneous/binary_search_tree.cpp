@@ -52,15 +52,18 @@ public:
         cout << "\n\n..............THE END!!!!..............\n\n";
     }
     // Member Functions
-    void insert(int);
-    void deleteNode(int);
+    void insert();
+    void deleteNode();
     void Traversals();
     void Top();
 };
 
 // Wrapper Function for Insertion Opertaion..
-void BST::insert(int val)
+void BST::insert()
 {
+    cout << "Insert--> ";
+    int val;
+    cin >> val;
     // Checks for Duplicate Element..
     if(m.find(val)==m.end())
     {
@@ -85,10 +88,13 @@ BST::Node* BST::insertion(Node* root,int val)
 }
 
 // Wrapper Function for Deletion Opertaion..
-void BST:: deleteNode(int val)
+void BST:: deleteNode()
 {
     if(!isEmpty())
     {
+        cout << "Delete--> ";
+        int val;
+        cin >> val;
         // Checks if Node exist in BST
         if(m.find(val)==m.end())
             cout << "Node doesn't EXIST!!!\n";
@@ -271,26 +277,16 @@ int main()
     cout << "1- Insert\n";
     cout << "2- Delete\n";
     cout << "3- Traversals\n";
-    cout << "4- Root\n";
+    cout << "4- Top\n";
     cout << "Any Character to EXIT!\n\n";
     int n;
     cout << "Enter--> ";
     while(cin >> n)
     {
         if(n==1)
-        {
-            cout << "Insert--> ";
-            int x;
-            cin >> x;
-            obj->insert(x); // Calling Insert Function
-        }
+            obj->insert(); // Calling Insert Function
         else if(n==2)
-        {
-            cout << "Delete--> ";
-            int x;
-            cin >> x;
-            obj->deleteNode(x); // Calling Delete Function
-        }
+            obj->deleteNode(); // Calling Delete Function
         else if(n==3)
             obj->Traversals(); // Calling Traversal Function
         else if(n==4)
